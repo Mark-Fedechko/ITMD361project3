@@ -52,7 +52,7 @@ function initMap() {
         <div style="font-family: Poppins, Arial, sans-serif;">
             <h2 style="margin:0 0 0.25rem 0; font-sizew:1rem;">Illinois Institute of Technology</h2>
             <p style="margin:0; font-size:0.875rem;">
-                This is my campus! Illinois Tech, a piece of my soul will forever be connected to this place.
+                This is my campus! Illinois Tech. 
             </p>
         </div>
         '
