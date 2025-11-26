@@ -48,13 +48,16 @@ function initMap() {
     });
 
     const campusInfo = new google.maps.InfoWindow({
-        content:
-        <div>
-            <h2>Illinois Institute of Technology</h2>
-            <p>
+        content:`
+        <div style="font-family: Poppins, Arial, sans-serif; color: #000;">
+            <h2 style="margin:0 0 .25rem 0; font-size:1rem; color:#000;">
+                Illinois Institute of Technology
+                </h2>
+            <p style="margin:0; font-size:0.875rem; color:#000;">
                 This is my campus! Illinois Tech. 
             </p>
         </div>
+        `
     });
 
 campusMarker.addListener("click", function () {
@@ -76,10 +79,31 @@ new google.maps.Marker({
         scale: 6,
         fillColor: "#00aaff",
         fillOpacity: 1,
-        strokeColor: "#ffffff",
+        strokeColor: "#000000ff",
         strokeWeight: 2,
         }
     });
+
+    const downtownInfo = new google.maps.InfoWindow({
+        content:`
+        <div style="font-family: Poppins, Arial, sans-serif; color: #000;">
+            <h2 style="margin:0 0 .25rem 0; font-size:1rem; color:#000;">
+                Downtown Chicago
+            </h2>
+            <p style="margin:0; font-size:0.875rem; color:#000;">
+                The heart of the city, known for its stunning architecture and vibrant culture.
+            </p>
+        </div>
+        `
+    });
+
+    downtownMarker.addlistener("click", function () {
+        downtownInfo.open({
+            anchor: downtownMarker,
+            map,
+            shouldFocus: false,
+        });
+    }); 
 }
 
 window.initMap = initMap;
