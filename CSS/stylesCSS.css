@@ -139,3 +139,32 @@ img, video { max-width: 100%; height: auto; border-radius: 0.5rem; }
   .nav { gap: 0.5rem; }
   .btn { width: 100%; text-align: center; }
 }
+
+@media (min-width: 40rem) {
+  .container--fixed {
+    width: 50rem;
+  }
+
+  .nav {
+    gap :1rem;
+  }
+
+  .site-header {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .container--fixed {
+    max-width: 65rem;
+  }
+
+  .nav {
+    gap: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+}
